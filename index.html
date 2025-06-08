@@ -11,6 +11,8 @@
     />
 
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   </head>
 
   <body>
@@ -27,6 +29,7 @@
             <li><a href="#Features">Features</a></li>
             <li><a href="#HowItWorks">How It Works</a></li>
             <li><a href="#About">About</a></li>
+            <li><a href="#Analytics">Analytics</a></li>
           </ul>
         </nav>
         <a href="#HowItWorks" class="btn-primary">Get Started</a>
@@ -187,6 +190,34 @@
       </div>
     </section>
 
+    <section class="analytics-section" id="Analytics">
+      <div class="analytics-container">
+        <h2 data-aos="fade-up" data-aos-duration="1300" data-aos-delay="100">
+          User Registration Analytics
+        </h2>
+        <p data-aos="fade-up" data-aos-duration="1300" data-aos-delay="100">
+          Track daily user registrations throughout the week
+        </p>
+        <div class="chart-container" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200">
+          <canvas id="registrationChart"></canvas>
+        </div>
+        <div class="chart-stats" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="300">
+          <div class="stat-card">
+            <h4 id="totalUsers">0</h4>
+            <p>Total Users</p>
+          </div>
+          <div class="stat-card">
+            <h4 id="todayRegistrations">0</h4>
+            <p>Today's Registrations</p>
+          </div>
+          <div class="stat-card">
+            <h4 id="weeklyAverage">0</h4>
+            <p>Weekly Average</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="why-section" id="About">
       <h2 data-aos="fade-up" data-aos-duration="1300" data-aos-delay="100">
         Smarter Document Creation<br />
@@ -275,6 +306,7 @@
         </div>
       </div>
       <script src="script.js"></script>
+      <script src="chart.js"></script>
     </section>
 
     <footer>
@@ -286,6 +318,7 @@
             <a href="#Features">Features</a>
             <a href="#HowItWorks">How It Works</a>
             <a href="#About">About</a>
+            <a href="#Analytics">Analytics</a>
           </div>
           <div class="footer-icons">
             <a href="#"><img src="Assets/twitter.png" alt="" /></a>

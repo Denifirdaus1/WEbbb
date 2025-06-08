@@ -436,6 +436,80 @@ img {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
+
+.analytics-section {
+  padding: 90px 20px 100px;
+  background: #fdfdfd;
+}
+
+.analytics-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.analytics-section h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.analytics-section p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.chart-container {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+  position: relative;
+  height: 400px;
+}
+
+.chart-container canvas {
+  max-height: 100%;
+}
+
+.chart-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  min-width: 180px;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h4 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #5271ff;
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
 .why-section {
   padding: 90px 20px 100px;
   text-align: center;
@@ -674,6 +748,27 @@ footer {
   height: 24px;
   margin: 0 8px;
 }
+
+@media (max-width: 768px) {
+  .chart-stats {
+    gap: 20px;
+  }
+  
+  .stat-card {
+    min-width: 150px;
+    padding: 20px;
+  }
+  
+  .chart-container {
+    padding: 20px;
+    height: 300px;
+  }
+  
+  .analytics-section {
+    padding: 60px 20px 80px;
+  }
+}
+
 @media (min-width: 768px) {
   .footer-top {
     flex-direction: row;
